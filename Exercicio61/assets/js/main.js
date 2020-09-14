@@ -7,7 +7,6 @@ const estilo = document.getElementById('myDiv');
 
 let cont = 0;
 let timer;
-let timer2;
 function iniciaRelogio() {
     timer = setInterval(() => {
         relogio.innerHTML = mostraHora(cont);
@@ -15,32 +14,30 @@ function iniciaRelogio() {
     }, 1000);
 }
 iniciar.addEventListener("click", function (e) {
-    e.preventDefault();
     clearInterval(timer);
-    iniciaRelogio();
     estilo.style.color = 'black';
+    iniciaRelogio();
+    
 });
 
 parar.addEventListener("click", function (e) {
     e.preventDefault();
     cont = cont;
-    setTimeout(() => {
-        estilo.style.color = 'red';
-        //relogio.innerHTML = mostraHora(cont);
-        clearInterval(timer);
-    }, 1000);
+    estilo.style.color = 'red';
+    //relogio.innerHTML = mostraHora(cont);
+    clearInterval(timer);
+
 
 });
 
 zerar.addEventListener("click", function (e) {
     e.preventDefault();
     cont = 0;
-    setTimeout(() => {
-        estilo.style.color = 'black';
-        clearInterval(timer);
-        //clearInterval(timer2);
-        relogio.innerHTML = `00:00:00`;
-    }, 1000);
+    clearInterval(timer);
+    estilo.style.color = 'black';
+   //clearInterval(timer2);
+    relogio.innerHTML = `00:00:00`;
+
 });
 
 function mostraHora(cont) {
