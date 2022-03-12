@@ -34,3 +34,11 @@ function mudaNome(a, b) {
 mudaNome(pessoa1.nome, pessoa1.sobrenome);
 
 console.log(pessoa1.nome + " " + pessoa1.sobrenome);
+
+const people = [
+    {name:"Pedro", age:17},
+    {name:"David", age:18},
+    {name:"André", age:15}
+];
+
+console.table(people);
