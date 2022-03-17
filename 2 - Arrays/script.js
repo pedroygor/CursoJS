@@ -35,3 +35,11 @@ console.log();
 console.log(frutas);
 const fatia = frutas.slice(1,3); //Sempre o número que termina é um a mais
 console.log(fatia);
+
+// array.splice() - adicioa e/ou remove elementos do array 
+console.log(frutas);
+frutas.splice(0, 0, 'Kiwi', 'Mamão');
+console.log(frutas);
+// ['Melancia', 'Banana', 'Goiaba', 'Limão'] Array antes do splice 
+// [ 'Kiwi', 'Mamão', 'Melancia', 'Banana', 'Goiaba', 'Limão' ] Array depois do splice
+//primeiro índice é o Índice o qual deve iniciar a alterar a lista.
