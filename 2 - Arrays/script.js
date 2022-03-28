@@ -43,3 +43,20 @@ console.log(frutas);
 // ['Melancia', 'Banana', 'Goiaba', 'Limão'] Array antes do splice 
 // [ 'Kiwi', 'Mamão', 'Melancia', 'Banana', 'Goiaba', 'Limão' ] Array depois do splice
 //primeiro índice é o Índice o qual deve iniciar a alterar a lista.
+
+//array.concat()
+const a1 = ['a', 'b', 'c'];
+const a2 = ['d', 'e', 'f'];
+const a3 = a1.concat(a2);
+console.log(a3);
+
+//spred operator
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+const arr3 = [...arr1, ...arr2];
+console.log(arr3);
+
+
+
+
+
