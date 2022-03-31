@@ -56,4 +56,3 @@ console.log(pessoasComNomeGrande);
 console.log(pessoasComMaisDeCiquentaAnos);
 console.log(pessoasTerminamComLetraA);
 
-c
