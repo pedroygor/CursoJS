@@ -1,7 +1,7 @@
 // Delete apaga e deixa o espaço no array
 const nomes = ['Joao', 'Pedro', 'Maria'];
 console.log(nomes); 
-delete nomes[1];
+delete nomes[1]; 
 console.log(nomes);
 console.log();
 
