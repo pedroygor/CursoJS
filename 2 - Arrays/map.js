@@ -6,16 +6,21 @@ function numeroAoQuadrado(num) {
 }
 console.log(numeros.map(numeroAoQuadrado));
 
-//juntar atributos de objetos
-const nomes = [
-{firstName: "Pedro", lastName: "Ygor"},
-{firstName: "Thiago", lastName: "Sena"},
-{firstName: "Celina", lastName: "Lopes"},
-{firstName: "Letícia", lastName: "Silva"}
+// juntar atributos de objetos
+// retorne um elementos com o nome de cada pessoa
+// remova apenas a chave nome do objeto
+// adicione uma chave id para cada objeto
+const pessoas = [
+{firstName: "Pedro", age: 26},
+{firstName: "Thiago", age: 29},
+{firstName: "Celina", age: 59},
+{firstName: "Letícia", age: 28},
+{firstName: "Rosana", age: 21},
+{firstName: "Eduarda", age: 15},
 ];
 
-function getFullName(item) {
-    return [item.firstName, item.lastName].join(" ");
-}
+const nome = pessoas.map(obj => obj.firstName);
+const idade = pessoas.map(obj => ({idade: obj.age}));
 
-console.log(nomes.map(getFullName));
+// console.log(nome);
+console.log(idade);
